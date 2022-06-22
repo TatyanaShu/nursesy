@@ -1,0 +1,450 @@
+@font-face {
+    font-family: "HelveticaNeueCyr-Black";
+    src: url("../assets/fonts/HelveticaNeueCyr-Black.otf");
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyr-Bold";
+    src: url("../assets/fonts/HelveticaNeueCyr-Bold.otf");
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyr-Light";
+    src: url("../assets/fonts/HelveticaNeueCyr-Light.otf");
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyr-Roman";
+    src: url("../assets/fonts/HelveticaNeueCyr-Roman.otf");
+}
+
+@font-face {
+    font-family: "NimbusSanTConBold";
+    src: url("../assets/fonts/NIMBSTB.TTF");
+}
+
+body {
+    height: 100vh;
+    background-color: #26311c;
+    font-family: "HelveticaNeueCyr-Regular", Arial, Helvetica, sans-serif;
+}
+
+body,
+.header-wrapper,
+.header-navigation,
+.welcome-text {
+    width: 100%;
+}
+
+body,
+a,
+.benefits .lean-more:hover {
+    color: #ffffff;
+}
+
+body,
+.page-top,
+.navigation,
+.navigation li,
+.welcome-text,
+.products-section,
+.product-list,
+.product,
+.benefits,
+.footer-navigation,
+.copyright {
+    display: flex;
+}
+
+body,
+.page-top,
+.welcome-text,
+.product,
+.benefits {
+    flex-direction: column;
+}
+
+.page-top {
+    background-image: url("../assets/images/background_top.png");
+    height: 865px;
+    border-bottom: 4px solid #e46107;
+}
+
+.page-top,
+.products-section,
+.community,
+footer,
+.copyright {
+    max-width: 100%;
+}
+
+.page-top,
+.logo,
+.view-product,
+.community {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header,
+section,
+.product-list,
+.footer-nav {
+    width: 960px;
+}
+
+header,
+section,
+.product-list,
+.footer-nav,
+.header-navigation,
+.product-list {
+    margin: 0 auto;
+}
+
+header,
+.logo-wrapper,
+.header-wrapper,
+.benefits p {
+    overflow: hidden;
+}
+
+.logo-wrapper {
+    width: 315px;
+    height: 182px;
+    margin: 15px auto 0 auto;
+}
+
+.logo-wrapper,
+.header-decor,
+.navigation li,
+.products-section {
+    position: relative;
+}
+
+.logo-background {
+    width: 315px;
+    height: 315px;
+    border-radius: 100%;
+}
+
+.logo {
+    background-image: url("../assets/images/logo.png");
+    width: 226px;
+    height: 122px;
+    margin-top: 35px;
+    margin-left: calc((315px - 226px)/2);
+}
+
+.logo,
+.header-wrapper,
+.header-decor::after,
+.product-list {
+    position: absolute;
+}
+
+.header-wrapper {
+    height: 25px;
+    z-index: 3;
+    top: 190px;
+}
+
+.header-decor {
+    display: inline-block;
+}
+
+.header-decor,
+footer,
+.logo-background {
+    background-color: #ffffff;
+}
+
+.header-decor,
+.footer-navigation,
+.footer-navigation li {
+    margin: auto;
+}
+
+.header-decor::after {
+    content: '';
+    top: -170px;
+    z-index: 2;
+    width: 960px;
+    height: 330px;
+    border-radius: 100%;
+    border: 0 solid #ffffff;
+    border-width: 50px 0 0 0;
+    transform: perspective(100px) scaleZ(0.1) rotateX(78deg);
+}
+
+.header-navigation {
+    border-radius: 100% 100% 0 0;
+    height: 80px;
+    z-index: 1;
+    background: radial-gradient(ellipse at 50% 15%, rgba(22, 73, 11, 0.8) 10%, rgba(49, 94, 39, 0.5) 35%, rgba(19, 71, 8, 0) 70%);
+}
+
+.navigation {
+    font-size: 18px;
+    margin: 0;
+    width: 92%;
+    z-index: 5;
+}
+
+.navigation,
+.product-list {
+    padding: 0;
+}
+
+.navigation,
+.lean-more,
+.footer-navigation {
+    text-transform: uppercase;
+}
+
+.navigation,
+.lean-more,
+.footer-navigation a {
+    font-family: "NimbusSanTConBold", Arial, Helvetica, sans-serif;
+}
+
+.navigation,
+.navigation li,
+.welcome-text,
+.products-section,
+.product-list,
+.product,
+.copyright {
+    align-items: center;
+}
+
+.navigation,
+.navigation li,
+.benefits,
+.products-section {
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navigation li>a {
+    margin: 1.5rem 1rem;
+}
+
+.navigation li>a:hover {
+    background-color: #e46107;
+    transform: scale(1.2);
+}
+
+.navigation li,
+.welcome-text {
+    border-radius: 5px;
+}
+
+.navigation li:hover,
+header .active {
+    background-color: #e46107;
+}
+
+h2 {
+    font-size: 68px;
+    font-family: "HelveticaNeueCyr-Black", Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px #15490a;
+    width: 80%;
+    margin: 2.5% auto;
+    line-height: 65px;
+}
+
+h1 {
+    font-size: 0;
+}
+
+h2,
+.product-name,
+.benefits h4 {
+    text-transform: capitalize;
+}
+
+h2,
+.welcome-text {
+    text-align: center;
+}
+
+.welcome-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 236px;
+}
+
+h4 {
+    margin: 2% auto .5%;
+}
+
+h4,
+.product-name {
+    font-size: 34px;
+    font-family: "HelveticaNeueCyr-Light", Arial, Helvetica, sans-serif;
+}
+
+.welcome-text p {
+    line-height: 24px;
+    max-width: 90%;
+    margin-bottom: 3%;
+}
+
+.welcome-text p,
+.benefits p {
+    font-size: 14px;
+}
+
+.welcome-text p,
+.benefits p,
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.products-section {
+    min-height: 680px;
+}
+
+.product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 91%;
+    top: -120px;
+}
+
+.product-list,
+.copyright {
+    justify-content: space-around;
+}
+
+.product {
+    flex-grow: 1;
+    margin-bottom: 1.7rem;
+}
+
+.product,
+.footer-navigation {
+    justify-content: space-between;
+}
+
+.view-product {
+    border-radius: 50%;
+    border: 7px solid #ffffff;
+    width: 206px;
+    height: 206px;
+}
+
+.potting-soil {
+    background-image: url("../assets/images/potting_soil.jpg");
+}
+
+.peat-moss {
+    background-image: url("../assets/images/peat_moss.jpg");
+}
+
+.fertilizers {
+    background-image: url("../assets/images/fertilizers.jpg");
+}
+
+.mulch {
+    background-image: url("../assets/images/mulch.jpg");
+}
+
+.compost {
+    background-image: url("../assets/images/compost.jpg");
+}
+
+.product-name {
+    margin: 30px auto 15px auto;
+}
+
+.lean-more,
+.benefits .lean-more:hover {
+    border: 3px solid #ffffff;
+    padding: 1rem 2.6rem;
+    border-radius: 8px;
+}
+
+.lean-more,
+.footer-navigation {
+    font-size: 19px;
+}
+
+.lean-more.active,
+.benefits .lean-more,
+.lean-more:hover {
+    border-color: #48890a;
+}
+
+.lean-more.active,
+.benefits span,
+.benefits .lean-more,
+.lean-more:hover {
+    color: #48890a;
+}
+
+.community {
+    background-image: url("../assets/images/community.jpg");
+    min-height: 530px;
+    border-bottom: 2px solid #7da83c;
+}
+
+.benefits {
+    max-width: 45%;
+    color: black;
+}
+
+.benefits h4 {
+    max-width: 30%;
+    margin: 75px 0 0;
+}
+
+.benefits span {
+    font-size: 54px;
+}
+
+.benefits p {
+    max-height: 170px;
+    line-height: 25px;
+}
+
+.benefits .lean-more {
+    max-width: 18%;
+}
+
+footer {
+    height: 130px;
+}
+
+.footer-navigation,
+.copyright {
+    height: 65px;
+}
+
+.footer-navigation {
+    width: 55%;
+}
+
+.footer-navigation a {
+    color: #7b7b7b;
+}
+
+a.active-point,
+.footer-navigation a:hover {
+    color: #8dc705;
+}
+
+.copyright {
+    background-color: #e4e4e4;
+    color: #919191;
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
